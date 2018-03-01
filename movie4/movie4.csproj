@@ -190,11 +190,22 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CheckOutsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802220046316_InitialCreate.cs" />
+    <Compile Include="Migrations\201802220046316_InitialCreate.Designer.cs">
+      <DependentUpon>201802220046316_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803010206077_MyTables.cs" />
+    <Compile Include="Migrations\201803010206077_MyTables.Designer.cs">
+      <DependentUpon>201803010206077_MyTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CheckOut.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -264,6 +275,16 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Movie.cshtml" />
     <Content Include="Views\Home\CheckOut.cshtml" />
+    <Content Include="Views\Movies\Create.cshtml" />
+    <Content Include="Views\Movies\Delete.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Edit.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\CheckOuts\Create.cshtml" />
+    <Content Include="Views\CheckOuts\Delete.cshtml" />
+    <Content Include="Views\CheckOuts\Details.cshtml" />
+    <Content Include="Views\CheckOuts\Edit.cshtml" />
+    <Content Include="Views\CheckOuts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -280,6 +301,14 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802220046316_InitialCreate.resx">
+      <DependentUpon>201802220046316_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803010206077_MyTables.resx">
+      <DependentUpon>201803010206077_MyTables.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

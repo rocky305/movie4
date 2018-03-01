@@ -20,6 +20,9 @@ namespace movie4.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<CheckOut> ChechOut { get; set; }
+        public DbSet<MovieStatus> MovieStatus { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
