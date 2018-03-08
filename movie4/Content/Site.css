@@ -25,12 +25,12 @@ textarea {
 }
 
 .jumbotron {
-    background-color: blue;
+    background-color: red;
     color: white;
 }
 
 .navbar{
-    background-color:black;
+    background-color:red;
     color:white;
 
 }
@@ -51,6 +51,7 @@ textarea {
 }
 
 .container {
+   
     padding: 0 16px;
 }
 
@@ -58,4 +59,5 @@ textarea {
         content: "";
         clear: both;
         display: table;
+     
     }
